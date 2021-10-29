@@ -1,88 +1,113 @@
-.container{
-width: 100vw;
-height:100vh;
-background-image: url("images/background.png");
-font-size:8pt;
-font-family:Verdana;
+body{
+    background-image: url("images/background.png");
+    font: 8pt Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.banner{
-  width:100vw;
-  height: 50px;
-  background-image: url("images/banner.png");
+
+.page_number {border-radius: 100%;}
+
+.rotten_div {
+    height: 100%;
 }
-.movie_title{
-    font-size: 24pt;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#999999;
-    text-shadow: 3px 3px;
+.image_banner{
+    background-image: url("images/bannerbg.png");
 }
-.internal_container{
+.banner_image{
+    margin-left: 20%;
+}
+h1.movie_name{
+    font :  24pt bold Tahoma, Verdana, sans-serif;
+    text-shadow:  3px 3px #999999;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+img.header{
+    height: 50px;
+}
+.overall_content_area{
+    margin-left: auto;
+    margin-right: auto;
     width: 800px;
-    align-content: center;
     border: 4px gray solid;
-    border-radius:20px;
+    border-radius: 20px;
+    /* height: 100%; */
 }
-.left_section_top{
-    width:550px;
+.rotten{
+    width: 550px;
+}
+.rotten_head{
     background-image: url("images/rbg.png");
-    background-repeat: repeat-x;
-    background-size: 83px;
-    font-size: 48px;
-    color:red;
+    font-size: 48pt;
+    color: red;
     font-weight: bold;
-
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#rotten{
+    height:  83px;
+    vertical-align: bottom;
+    border-top-left-radius: inherit;
+}
+.rotten_column{
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    /* position: relative; */
+    /* margin-top: 0; */
+    /* bottom: 1em; */
 }
 
-.reviewer_section{
-width: 47%;
-border-spacing: 2%;
+div#col1 {
+    position: relative;
+    bottom: 6em;
 }
-
-.review_item{
-   font-size: 8pt; 
-   font-weight: bold;
-   background-color: #a09a7b;
-   padding: 8px;
-   border-radius: 10px;
-   border-color: gray;
-   border:2px;
+.general_overview{
+    background-color:  #A2B964;
+    width: 250px;
+    font: 8pt  Arial,sans-serif;
+    float: right;
+    border-top-right-radius:20px;
+    height: 99%;
 }
-
-.last_review{
-    font-family: tahoma;
+.overview_image{
+    border-top-right-radius:20px;
 }
-
-.reviewer_details{
-    content: url("images/critics.gif");
-    padding-right: 5px;
-    margin-bottom: 20pt;
-}
-
-.right_section{
-    background-color:#A2B964;
-    width:250px;
-    padding: 10pt;
-    font-size: 8pt;
-    font-family: Arial, Helvetica, sans-serif;
-}
-dt{
-    font-weight:bold;
-    margin-top: 10pt;
-} 
-
-.footer_bar{
+#page_number{
+    margin-top: 13%;
+    padding-left: 50%;
     background-color: #A2B964;
-    padding:5px;
+    margin-bottom: 0;
+    border-bottom-right-radius: 10pt;
+    border-bottom-left-radius: 10pt;
+}
+.comment{
+font-size: 8pt;
+font-weight: bold;
+background-color: #E8DC9B;
+border: 2px gray solid;
+border-width: 2px;
+border-radius: 10px;
+padding: 8px;
+}
+#comment_images img{
+    vertical-align: middle;
+    margin-bottom: auto;
 }
 
-img.validator{
-    opacity: 50%;
-
+#rotten_column1 img,#rotten_column2 img{
+    padding-right: 5px;
 }
-    
-
-
-  
-  
-
+ dt{
+font-weight: bold;
+} 
+.validation_section{
+    position: relative;
+  left: 93%;
+}
+.rotten_column img{
+    float: left;
+    left: 2em;
+top: 1em;
+}
